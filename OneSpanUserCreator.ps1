@@ -8,7 +8,7 @@ function CreateUserAndInvite {
     )
 
     # Define the OneSpan API endpoint and the API key (replace with your actual API key)
-    $apiUrl = "https://apps.esignlive.eu/api/packages/"
+    $apiUrl = "https://apps.esignlive.eu/api/account/senders"
     $apiKey = "YOUR_API_KEY"
 
     # Prepare the user data in JSON format
