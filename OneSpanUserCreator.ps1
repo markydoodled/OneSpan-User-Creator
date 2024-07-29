@@ -25,7 +25,7 @@ function CreateUser {
     } | ConvertTo-Json
 
     # Make the API call to create the user
-    $response = Invoke-RestMethod -Uri $apiUrl -Method Post -Body $userData -ContentType "application/json" -Headers @{ "Authorisation" = "Bearer $apiKey" }
+    $response = Invoke-RestMethod -Uri $apiUrl -Method Post -Body $userData -ContentType "application/json" -Headers @{ "Authorization" = "Bearer $apiKey" }
 
     # Check the response and display a message
     if ($response) {
